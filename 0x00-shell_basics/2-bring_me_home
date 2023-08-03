@@ -1,2 +1,2 @@
 #!/bin/bash
-cd $home
+Get the user's home directory
