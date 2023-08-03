@@ -17,4 +17,5 @@ Other users: all the permissions
 10-mirror permissions == Write a script that sets the mode of the file hello the same as olleh’s mode
 11-directories == Create a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users.
 12-directory == Create a script that creates a directory called my_dir with permissions 751 in the working directory.
+13-change == Write a script that changes the group owner to school for the file hello
 
