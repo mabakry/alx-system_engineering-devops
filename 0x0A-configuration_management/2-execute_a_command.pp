@@ -1,6 +1,6 @@
-# kills a process named killmenow.
+# This Puppet manifest kills a process named killmenow
 
-exec {'pkill':
-path => '/usr/bin/',
-command => 'pkill -f killmenow',
+exec { 'process kill killmenow':
+  path    => '/usr/bin/',
+  command => 'pkill -f killmenow',
 }
