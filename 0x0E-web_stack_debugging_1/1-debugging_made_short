@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# short and sweet fix what’s keeping  Ubuntu container’s Nginx installation from listening on port 80
+rm /etc/nginx/sites-enabled/default
+ln /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+pkill 'nginx'
