@@ -46,6 +46,8 @@ backend web-backend
 frontend http-in
         mode http
         bind *:80
+        bind *:443 ssl crt /etc/haproxy/certs/www.mabakry.tech.pem
+        redirect scheme https code 301 if !{ ssl_fc }
 
         default_backend web_servers
 
